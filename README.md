@@ -1,5 +1,4 @@
-# Anomaly Detection Dashboard
-
+# Time Series Monitoring and Anomaly Detection Dashboard
 ## Overview
 
 This dashboard is designed for scalable, maintainable, and efficient monitoring and analysis of industrial sensor data. It provides interactive visualization, anomaly detection, and statistical analysis for time series data collected from a gas-fired hardening facility.
@@ -105,6 +104,7 @@ The dashboard will be available at `http://localhost:3000`.
 This project is for academic use as part of a Bachelor Thesis - Time Series Analysis for Early Detection of Operational Irregularities in a Gas-Fired Material Hardening Facility Using Sensor Data
 
 Created by Anish Biswas a student of Bachelor of Science (B. Sc.) in International Information Systems at Technische Hochschule Augsburg
+
 
 
 
