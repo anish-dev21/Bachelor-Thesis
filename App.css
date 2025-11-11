@@ -1,0 +1,308 @@
+/* App.css
+/* Keyframes for spinning the App logo */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); /* Start at 0 degrees rotation */
+  }
+  to {
+    transform: rotate(360deg); /* End at 360 degrees rotation */
+  }
+}
+
+/* Loading animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-circle {
+  border: 8px solid rgba(255, 255, 255, 0.3);
+  border-top: 8px solid #61dafb;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+/* Center align text within the App component */
+.App {
+  text-align: center;
+  background-color: black; /* Change background color to black */
+}
+
+/* Style for the App logo */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none; /* Disable pointer events on the logo */
+}
+
+/* Apply animation to the logo if the user has no preference for reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; /* Spin the logo infinitely with a 20s duration */
+  }
+}
+
+/* Style for the App header */
+.App-header {
+  background-color: #010202; /* Dark background color */
+  min-height: 100vh; /* Minimum height of 100% of the viewport height */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center; /* Center align items horizontally */
+  justify-content: center; /* Center align items vertically */
+  font-size: calc(10px + 2vmin); /* Responsive font size */
+  color: white; /* White text color */
+}
+
+/* Style for links within the App */
+.App-link {
+  color: #61dafb; /* Light blue color for links */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .controls label {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .controls button {
+    width: 100%;
+  }
+
+  .loading-circle {
+    width: 30px;
+    height: 30px;
+    border-width: 6px;
+  }
+
+  .plotly-chart-container {
+    width: 100%;
+    height: 700px; /* Bigger height for better visibility */
+  }
+}
+
+/* Ensure full width for smaller screens */
+@media (max-width: 480px) {
+  .plotly-chart-container {
+    width: 100%;
+    height: 600px; /* Bigger height for mobile */
+  }
+}
+
+/* Increase font size and add spacing for labels and inputs */
+.controls label {
+  font-size: 1.1em; /* Increase font size */
+  margin-top: 20px; /* Add space above each label */
+  margin-right: 30px; /* Add space between label and input */
+  margin-bottom: 20px; /* Add space below each label */
+}
+
+.controls input {
+  margin-bottom: 10px; /* Add space between inputs */
+}
+
+/* Increase font size for the Fetch Data button */
+.controls button {
+  font-size: 1.0em; /* Increase font size */
+  padding: 6px 10px; /* Add padding for better appearance */
+  margin-top: 5px; /* Add space above the button */
+  margin-bottom: 40px; /* Add space below the button */
+}
+
+.datetime-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.datetime-container .start-date-time,
+.datetime-container .end-date-time {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2%;
+}
+
+.datetime-container .start-date-time {
+  flex-basis: 100%;
+}
+
+.datetime-container .end-date-time {
+  flex-basis: 100%;
+  margin-top: 10px; /* Add space above end date-time to move it to the next line */
+}
+
+.datetime-container label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.1em; /* Increase font size */
+}
+
+.datetime-container input {
+  font-size: 1.2em; /* Increase font size of the input text */
+  padding: 2px; /* Increase padding for larger input boxes */
+}
+
+/* Additional responsive styles */
+@media (max-width: 639px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .datetime-container {
+    flex-direction: column;
+  }
+
+  .react-select__control {
+    height: 40px !important;
+  }
+
+  .react-select__single-value {
+    font-size: 1em !important;
+  }
+
+  .react-select__menu {
+    font-size: 0.9em !important;
+  }
+
+  .react-select__placeholder {
+    font-size: 1em !important;
+  }
+
+  button {
+    font-size: 1em !important;
+  }
+
+  h1 {
+    font-size: 1.5em !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .app-container {
+    padding: 15px;
+  }
+
+  .controls {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .datetime-container {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .react-select__control {
+    height: 60px !important;
+  }
+
+  .react-select__single-value {
+    font-size: 1.1em !important;
+  }
+
+  .react-select__menu {
+    font-size: 1em !important;
+  }
+
+  .react-select__placeholder {
+    font-size: 1.1em !important;
+  }
+
+  button {
+    font-size: 1.1em !important;
+  }
+
+  h1 {
+    font-size: 1.8em !important;
+  }
+
+  .plotly-chart-container {
+    height: 800px; /* Bigger height for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  .controls {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .datetime-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .react-select__control {
+    height: 55px !important;
+  }
+
+  .react-select__single-value {
+    font-size: 1.2em !important;
+  }
+
+  .react-select__menu {
+    font-size: 1.1em !important;
+  }
+
+  .react-select__placeholder {
+    font-size: 1.2em !important;
+  }
+
+  button {
+    font-size: 1.2em !important;
+  }
+
+  h1 {
+    font-size: 2em !important;
+  }
+
+    .plotly-chart-container {
+      height: 900px; /* Much bigger height for larger screens */
+    }
+  }
+  /* Set the page background color */
+  body {
+    background-color: rgba(177, 201, 223, 0.692); /* Light blue background color */
+  }
+
+  .plotly-chart-container {
+    width: 100%;
+    height: 850px;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .loading-circle {
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    border-top: 8px solid #61dafb;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }

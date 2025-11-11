@@ -1,0 +1,369 @@
+.anomaly-detection-panel {
+  background: rgba(177, 201, 223, 0.692);
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.anomaly-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.anomaly-header h3 {
+  margin: 0;
+  color: #343a40;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.toggle-btn {
+  background: #f8f9fa;
+  color: #212529;
+  border: 2px solid #000000;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+  width: auto;
+  max-width: 120px;
+}
+
+.toggle-btn:hover {
+  background: #f1f3f4;
+  border-color: #adb5bd;
+}
+
+.toggle-btn.active {
+  background: #28a745;
+  color: white;
+  border-color: #28a745;
+}
+
+.toggle-btn.active:hover {
+  background: #218838;
+  border-color: #218838;
+}
+
+.toggle-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Statistics Display */
+.anomaly-stats {
+  margin-bottom: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.stat-card {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 8px 6px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 2px;
+  line-height: 1.1;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #6c757d;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+/* Exclude Ranges Section */
+.exclude-ranges-section {
+  background: rgba(177, 201, 223, 0.692);
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.exclude-ranges-section h4 {
+  margin: 0 0 10px 0;
+  color: #495057;
+  font-size: 0.9rem;
+}
+
+.exclude-form {
+  margin-bottom: 12px;
+}
+
+.form-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.input-group label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #495057;
+  margin-bottom: 2px;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-row input:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+.add-btn {
+  background: #e9ecef;
+  color: #343a40;
+  border: 2px solid #000000;
+  padding: 0px 4px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  width: auto;
+  white-space: nowrap;
+}
+
+.add-btn:hover {
+  background: #dee2e6;
+  border-color: #6c757d;
+}
+
+/* Exclude Ranges List */
+.exclude-ranges-list {
+  border-top: 1px solid #e9ecef;
+  padding-top: 10px;
+}
+
+.exclude-ranges-list h5 {
+  margin: 0 0 6px 0;
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.exclude-range-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 3px;
+  margin-bottom: 6px;
+}
+
+.exclude-range-item span {
+  font-family: 'Courier New', monospace;
+  font-size: 0.7rem;
+  color: #495057;
+}
+
+.remove-btn {
+  background: #dc3545;
+  color: white;
+  border: 2px solid #000000;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.remove-btn:hover {
+  background: #c82333;
+  transform: scale(1.1);
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.run-btn {
+  background: #e9ecef;
+  color: #343a40;
+  border: 2px solid #000000;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  width: auto;
+  min-width: 140px;
+  white-space: nowrap;
+}
+
+.run-btn:hover:not(:disabled) {
+  background: #dee2e6;
+  border-color: #6c757d;
+}
+
+.run-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Advanced Statistics Section */
+.advanced-stats {
+  background: rgba(177, 201, 223, 0.692);
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.advanced-stats h5 {
+  margin: 0 0 10px 0;
+  color: #495057;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Baseline Percentiles Section */
+.baseline-percentiles {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.baseline-percentiles h5 {
+  margin: 0 0 10px 0;
+  color: #495057;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Remove all special colors - keep cards simple */
+
+/* Stat sublabel for additional info */
+.stat-sublabel {
+  font-size: 0.6rem;
+  color: #868e96;
+  font-weight: 400;
+  margin-top: 1px;
+  line-height: 1.1;
+}
+
+/* Baseline Information */
+.baseline-info {
+  background: rgba(177, 201, 223, 0.692);
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.baseline-info h4 {
+  margin: 0 0 10px 0;
+  color: #495057;
+  font-size: 0.9rem;
+}
+
+.baseline-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.baseline-stats div {
+  padding: 6px 8px;
+  background: #f8f9fa;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+.baseline-stats strong {
+  color: #343a40;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .anomaly-header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .form-row {
+    flex-direction: column;
+  }
+  
+  .exclude-range-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  
+  .baseline-stats {
+    gap: 8px;
+  }
+}
+
+/* Animation for loading states */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.run-btn:disabled {
+  animation: pulse 1.5s infinite;
+}
