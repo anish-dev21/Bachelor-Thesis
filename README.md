@@ -32,7 +32,7 @@ The dashboard follows a layered architecture with four main components:
 
 **Anomaly Detection Extension :**
 
-![Anomaly Detection Extension](https://github.com/anish-dev21/Bachelor-Thesis/blob/main/Anomaly%20Detection%20Dashboard%20extension.pdf)
+Anomaly Detection Dashboard Extension.pdf
 
 The dashboard integrates multiple statistical techniques:
 
@@ -111,4 +111,5 @@ The dashboard will be available at `http://localhost:3000`.
 This project is for academic use as part of a Bachelor Thesis - Time Series Analysis for Early Detection of Operational Irregularities in a Gas-Fired Material Hardening Facility Using Sensor Data
 
 Created by Anish Biswas a student of Bachelor of Science (B. Sc.) in International Information Systems at Technische Hochschule Augsburg
+
 
