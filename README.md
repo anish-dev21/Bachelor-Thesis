@@ -50,7 +50,7 @@ The dashboard integrates multiple statistical techniques:
 
 ## Data Resampling
 
-The backend uses a time-stratified sampling algorithm to downsample large datasets, preserving statistical properties and temporal structure. This approach avoids the geometric bias of LTTB and ensures accurate baseline and anomaly detection.
+The backend uses a time-stratified sampling algorithm to downsample large datasets, preserving statistical properties and temporal structure.
 
 ## Visualization Features
 
@@ -72,7 +72,7 @@ The backend uses a time-stratified sampling algorithm to downsample large datase
 
 ## Extensibility
 
-The architecture supports future integration of machine learning models, predictive analytics, and additional sensor sources without major redesign, enabling scalable and intelligent industrial analytics.
+The architecture supports future integration of machine learning models, predictive analytics, and additional sensor sources without major redesign, enabling efficient and intelligent industrial analytics.
 
 ## Getting Started
 
@@ -112,6 +112,7 @@ The dashboard will be available at `http://localhost:3000`.
 ## License
 
 This project is for academic use as part of the Bachelor Thesis - Time Series Analysis for Early Detection of Operational Irregularities in a Gas-Fired Material Hardening Facility Using Sensor Data at Technische Hochschule Augsburg
+
 
 
 
