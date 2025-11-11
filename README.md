@@ -2,9 +2,13 @@
 
 ## Overview
 
-This dashboard is designed for scalable, maintainable, and efficient monitoring and analysis of industrial sensor data. It provides interactive visualization, anomaly detection, and statistical analysis for time series data collected from a gas-fired hardening facility. 
+This dashboard is designed for scalable, maintainable, and efficient monitoring and analysis of industrial sensor data. It provides interactive visualization, anomaly detection, and statistical analysis for time series data collected from a gas-fired hardening facility. The system is containerized and deployable in environments such as OpenShift.
 
 ## Architecture
+
+📋 **Dashboard Architecture :**
+
+![Dashboard Architecture](./Dashboard_Architecture.pdf)
 
 The dashboard follows a layered architecture with four main components:
 
@@ -26,6 +30,10 @@ The dashboard follows a layered architecture with four main components:
 
 ## Statistical Methods & Anomaly Detection
 
+**Anomaly Detection Extension :**
+
+![Anomaly Detection Extension](./Anomaly%20Detection%20Dashboard%20extension.pdf)
+
 The dashboard integrates multiple statistical techniques:
 
 - **Percentile Baselines**: Operational states are classified using percentiles (P5, P10, P15, P85, P90, P95) to provide context-aware thresholds for anomaly detection and alerts.
@@ -38,6 +46,10 @@ The dashboard integrates multiple statistical techniques:
 The backend uses a time-stratified sampling algorithm to downsample large datasets, preserving statistical properties and temporal structure. This approach avoids the geometric bias of LTTB and ensures accurate baseline and anomaly detection.
 
 ## Visualization Features
+
+**Dashboard Interface :**
+
+![Dashboard Interface](./Dashboard_Interface.pdf)
 
 - **Baseline Overlay Lines**: Percentile thresholds are shown as colored reference lines.
 - **Anomaly Markers**: Detected anomalies are visualized with color-coded scatter points.
@@ -90,9 +102,12 @@ The architecture supports future integration of machine learning models, predict
 
 The dashboard will be available at `http://localhost:3000`.
 
+
+
+
+
 ## License
 
 This project is for academic use as part of a Bachelor Thesis - Time Series Analysis for Early Detection of Operational Irregularities in a Gas-Fired Material Hardening Facility Using Sensor Data
 
-
-Created by Anish Biswas. a student of Bachelor of Science (B. Sc.) in International Information Systems at Technische Hochschule Augsburg.
+Created by Anish Biswas a student of Bachelor of Science (B. Sc.) in International Information Systems at Technische Hochschule Augsburg
