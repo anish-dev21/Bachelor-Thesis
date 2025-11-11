@@ -1,15 +1,9 @@
 # Time Series Monitoring and Anomaly Detection Dashboard
 
-<div align="center">
-
 **Bachelor thesis in collaboration with AGCO GmbH (Fendt) and Technische Hochschule Augsburg**
-
----
 
 ### **Thesis Topic**
 *Time Series Analysis for Early Detection of Operational Irregularities in a Gas-Fired Material Hardening Facility Using Sensor Data*
-
----
 
 **Created by:** Anish Biswas  
 *Bachelor of Science (B. Sc.) in International Information Systems*  
@@ -118,6 +112,7 @@ The dashboard will be available at `http://localhost:3000`.
 ## License
 
 This project is for academic use as part of a Bachelor Thesis - Time Series Analysis for Early Detection of Operational Irregularities in a Gas-Fired Material Hardening Facility Using Sensor Data.
+
 
 
 
