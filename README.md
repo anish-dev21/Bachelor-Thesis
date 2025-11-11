@@ -8,7 +8,7 @@ This dashboard is designed for scalable, maintainable, and efficient monitoring 
 
 📋 **Dashboard Architecture :**
 
-![Dashboard Architecture](./Dashboard_Architecture.pdf)
+![Dashboard Architecture](https://github.com/anish-dev21/Bachelor-Thesis/blob/main/Dashboard_Architecture.pdf)
 
 The dashboard follows a layered architecture with four main components:
 
@@ -32,7 +32,7 @@ The dashboard follows a layered architecture with four main components:
 
 **Anomaly Detection Extension :**
 
-![Anomaly Detection Extension](./Anomaly%20Detection%20Dashboard%20extension.pdf)
+![Anomaly Detection Extension](https://github.com/anish-dev21/Bachelor-Thesis/blob/main/Anomaly%20Detection%20Dashboard%20extension.pdf)
 
 The dashboard integrates multiple statistical techniques:
 
@@ -49,7 +49,7 @@ The backend uses a time-stratified sampling algorithm to downsample large datase
 
 **Dashboard Interface :**
 
-![Dashboard Interface](./Dashboard_Interface.pdf)
+![Dashboard Interface](https://github.com/anish-dev21/Bachelor-Thesis/blob/main/Dashboard_Interface.pdf)
 
 - **Baseline Overlay Lines**: Percentile thresholds are shown as colored reference lines.
 - **Anomaly Markers**: Detected anomalies are visualized with color-coded scatter points.
@@ -111,3 +111,4 @@ The dashboard will be available at `http://localhost:3000`.
 This project is for academic use as part of a Bachelor Thesis - Time Series Analysis for Early Detection of Operational Irregularities in a Gas-Fired Material Hardening Facility Using Sensor Data
 
 Created by Anish Biswas a student of Bachelor of Science (B. Sc.) in International Information Systems at Technische Hochschule Augsburg
+
